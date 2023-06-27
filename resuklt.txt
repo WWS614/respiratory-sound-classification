@@ -1,0 +1,99 @@
+maxk: 2
+batch-size: 32
+pred: tensor([[0, 1],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [0, 1],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [0, 1],
+        [1, 0],
+        [1, 0],
+        [1, 0],
+        [1, 0]], device='cuda:0')
+pred_t: tensor([[0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         1, 1, 1, 0, 1, 1, 1, 1],
+        [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+         0, 0, 0, 1, 0, 0, 0, 0]], device='cuda:0')
+correct: tensor([[False,  True,  True,  True, False,  True,  True,  True,  True,  True,
+          True,  True,  True,  True,  True,  True,  True,  True,  True,  True,
+          True,  True,  True,  True,  True,  True,  True, False,  True,  True,
+          True,  True],
+        [ True, False, False, False,  True, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False,  True, False, False,
+         False, False]], device='cuda:0')
+maxk: 2
+batch-size: 10
+pred: tensor([[1, 0],
+        [0, 1],
+        [0, 1],
+        [1, 0],
+        [1, 0],
+        [0, 1],
+        [1, 0],
+        [1, 0],
+        [0, 1],
+        [1, 0]], device='cuda:0')
+pred_t: tensor([[1, 0, 0, 1, 1, 0, 1, 1, 0, 1],
+        [0, 1, 1, 0, 0, 1, 0, 0, 1, 0]], device='cuda:0')
+correct: tensor([[ True, False, False,  True,  True, False,  True,  True, False,  True],
+        [False,  True,  True, False, False,  True, False, False,  True, False]],
+       device='cuda:0')
+[2022-06-15 23:39:23 swin_tiny_patch4_window7_224](main.py 279): INFO  * Acc@1 76.903 Acc@5 100.000
+[2022-06-15 23:39:23 swin_tiny_patch4_window7_224](main.py 156): INFO Accuracy of the network on the 1130 test images: 76.9%
+[2022-06-15 23:39:23 swin_tiny_patch4_window7_224](main.py 158): INFO Max accuracy: 78.14%
+[2022-06-15 23:39:23 swin_tiny_patch4_window7_224](main.py 162): INFO Training time 4:00:01
+
+
+       device='cuda:0')
+[2022-06-16 09:05:33 swin_tiny_patch4_window7_224](main.py 279): INFO  * Acc@1 62.400 Acc@5 79.200
+[2022-06-16 09:05:33 swin_tiny_patch4_window7_224](main.py 156): INFO Accuracy of the network on the 500 test images: 62.4%
+[2022-06-16 09:05:33 swin_tiny_patch4_window7_224](main.py 158): INFO Max accuracy: 62.40%
+[2022-06-16 09:05:33 swin_tiny_patch4_window7_224](main.py 162): INFO Training time 0:29:33
+
+OR_data
+[2022-06-16 11:22:16 swin_tiny_patch4_window7_224](main.py 279): INFO  * Acc@1 62.400 Acc@5 81.000
+[2022-06-16 11:22:16 swin_tiny_patch4_window7_224](main.py 156): INFO Accuracy of the network on the 500 test images: 62.4%
+[2022-06-16 11:22:16 swin_tiny_patch4_window7_224](main.py 158): INFO Max accuracy: 62.40%
+[2022-06-16 11:22:16 swin_tiny_patch4_window7_224](main.py 162): INFO Training time 0:59:11
+
+data AUG
+[2022-06-16 22:58:34 swin_tiny_patch4_window7_224](main.py 279): INFO  * Acc@1 35.306 Acc@5 60.233
+[2022-06-16 22:58:34 swin_tiny_patch4_window7_224](main.py 156): INFO Accuracy of the network on the 1031 test images: 35.3%
+[2022-06-16 22:58:34 swin_tiny_patch4_window7_224](main.py 158): INFO Max accuracy: 40.74%
+[2022-06-16 22:58:34 swin_tiny_patch4_window7_224](main.py 162): INFO Training time 2:06:57
+new_2022-6-18
+[2022-06-18 21:11:04 swin_tiny_patch4_window7_224](main.py 279): INFO  * Acc@1 52.836 Acc@5 88.357
+[2022-06-18 21:11:04 swin_tiny_patch4_window7_224](main.py 156): INFO Accuracy of the network on the 2697 test images: 52.8%
+[2022-06-18 21:11:04 swin_tiny_patch4_window7_224](main.py 158): INFO Max accuracy: 58.29%
+[2022-06-18 21:11:04 swin_tiny_patch4_window7_224](main.py 162): INFO Training time 2:35:30
+
+
+
+[2022-06-27 11:28:42 swin_tiny_patch4_window7_224](main.py 279): INFO  * Acc@1 48.135 Acc@5 84.014
+[2022-06-27 11:28:42 swin_tiny_patch4_window7_224](main.py 156): INFO Accuracy of the network on the 563 test images: 48.1%
+[2022-06-27 11:28:42 swin_tiny_patch4_window7_224](main.py 158): INFO Max accuracy: 74.60%
+[2022-06-27 11:28:42 swin_tiny_patch4_window7_224](main.py 162): INFO Training time 0:27:09
+
